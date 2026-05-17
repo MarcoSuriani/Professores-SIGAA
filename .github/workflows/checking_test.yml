@@ -19,3 +19,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo "{{ $GITHUB_WORKSPACE }}"
+
+      - name: List files in the workspace
+        run: ls $GITHUB_WORKSPACE
+
+      - name: Echo content of a specific file
+        run: cat $GITHUB_WORKSPACE/readSIGAA.ipynb
